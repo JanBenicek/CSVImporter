@@ -5,12 +5,12 @@ namespace CSVImporter
     public class Importer
     {
         /// <summary>
-        /// Import CSV data to 2D List pole
+        /// Import CSV data to 2D List based field
         /// </summary>
         /// <param name="path">Path of CSV File</param>
         /// <param name="separator">Separator between values</param>
         /// <param name="skip">Skip first x rows (do not load)</param>
-        /// <returns></returns>
+        /// <returns>List based 2D field. Main list contains collumns and contained list values</returns>
         public static List<List<string>> ImportCSV(string path, string separator, int skip = 0)
         {
             List<List<string>> Collumns = new List<List<string>>(); //Initialize Lists Object
